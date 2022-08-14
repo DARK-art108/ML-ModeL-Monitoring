@@ -41,48 +41,6 @@ The compose will start the following services:
 4. evidently_service - Evindently RT-monitoring service
 5. prediction_service - main service, which makes predictions
 
-
-## **File Structure**
-
-📦monitoring
- ┣ 📂.ipynb_checkpoints
- ┃ ┗ 📜mongo_connect-checkpoint.ipynb
- ┣ 📂evidently_service
- ┃ ┣ 📂config
- ┃ ┃ ┣ 📜grafana_dashboards.yaml
- ┃ ┃ ┣ 📜grafana_datasources.yaml
- ┃ ┃ ┗ 📜prometheus.yml
- ┃ ┣ 📂dashboards
- ┃ ┃ ┣ 📜cat_target_drift.json
- ┃ ┃ ┣ 📜classification_performance.json
- ┃ ┃ ┣ 📜data_drift.json
- ┃ ┃ ┣ 📜num_target_drift.json
- ┃ ┃ ┗ 📜regression_performance.json
- ┃ ┣ 📂datasets
- ┃ ┃ ┣ 📜do_not_delete
- ┃ ┃ ┗ 📜green_tripdata_2021-01.parquet
- ┃ ┣ 📜app.py
- ┃ ┣ 📜config.yaml
- ┃ ┣ 📜Dockerfile
- ┃ ┗ 📜requirements.txt
- ┣ 📂prediction_service
- ┃ ┣ 📜app.py
- ┃ ┣ 📜Dockerfile
- ┃ ┣ 📜lin_reg.bin
- ┃ ┗ 📜requirements.txt
- ┣ 📜.gitignore
- ┣ 📜docker-compose.yml
- ┣ 📜evidently_report_example.html
- ┣ 📜green_tripdata_2022-01.parquet
- ┣ 📜mongo_connect.ipynb
- ┣ 📜prefect_example.py
- ┣ 📜prepare.py
- ┣ 📜README.md
- ┣ 📜requirements.txt
- ┣ 📜send_data.py
- ┣ 📜target.csv
- ┗ 📜test.py
-
  ## Start Sending Data
 
 Run the following command to send data to the service:
